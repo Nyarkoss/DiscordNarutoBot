@@ -15,9 +15,7 @@ for (let i = 0; i < languages.length; i++) {
   languagesStr += languages[i] + "  "
 }
 
-if (config.token === "YOUR BOT TOKEN HERE") {
-  console.log("Please generate a bot token and put it in config.json");
-}
+bot.login(process.env.TOKEN);
 
 console.log("Supported languages: " + languagesStr);
 
